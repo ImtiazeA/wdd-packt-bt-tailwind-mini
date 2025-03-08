@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Email Subscribe - Tailwind Mini Project</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-zinc-700">
+    <div class="container mx-auto">
+      <div class="flex h-screen items-center justify-center">
+
+        <!-- card -->
+        <div class="mx-6 rounded-2xl bg-zinc-800 p-2">
+          <!-- flex container -->
+          <div class="flex flex-col rounded-l-xl md:flex-row">
+            <!--image-->
+            <img
+              src="images/image.jpg"
+              alt=""
+              class="object-fit h-80 transform rounded-xl duration-200 hover:scale-105 hover:rounded-xl md:h-64 md:rounded-l-xl md:rounded-r-none hover:md:rounded-r-none"
+            />
+            <!--content-->
+            <div class="p-6 md:p-12">
+              <h2
+                class="text-center font-serif text-xl font-medium text-white md:text-left"
+              >
+                Get diet and fitness tips delivered to your inbox
+              </h2>
+
+              <p
+                class="my-4 max-w-xs text-center text-xs leading-5 tracking-wide text-white md:text-left"
+              >
+                Eat better and exercise better. Sign up for the Diet & Fitness
+                Newsletter.
+              </p>
+
+              <div
+                class="mt-5 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-3"
+              >
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="border border-zinc-600 bg-zinc-800 p-2 px-4 text-center text-white placeholder:text-xs focus:outline-none md:text-left md:placeholder:text-left"
+                />
+                  <button class="px-5 py-3 text-xs rounded-md text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
