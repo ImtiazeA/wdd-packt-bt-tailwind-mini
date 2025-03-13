@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Modal - Tailwind Mini Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --font-mulish: "Mulish", sans-serif;
+        --font-rokkitt: "Rokkitt", serif;
+      }
+    </style>
+
+  </head>
+  <body class="bg-rose-50 font-mulish">
+    <div class="container mx-auto">
+      <!-- container -->
+      <div class="flex items-center justify-center min-h-screen">
+
+        <!--card container-->
+        <div class="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
+          
+          <!-- left -->
+          <div class="p-6 md:p-20">
+              <!-- top content -->
+            <h2 class="font-rokkitt mb-5 text-4xl font-bold">
+              Log In
+            </h2>
+            <p class="max-w-sm mb-12  font-light text-gray-600">
+              Log in to your account to upload your photos, create a profile, and more.
+            </p>
+
+            <input type="text" class="w-full p-6 border border-gray-300 rounded-md placeholder:font-mulish" placeholder="Enter your email address">
+
+            <!-- middle content -->
+            <div class="flex flex-col items-center justify-between mt-6 scroll-py-6 md:flex-row md:space-y-0 gap-3">
+                <div class="font-thin text-cyan-700">
+                    Forgot Password?
+                </div>
+
+              <button class="w-full md:w-auto flex justify-center items-center p-6 space-x-4 font-mulish font-bold text-white rounded-md shadow-sm px-9 bg-cyan-700 shadow-cyan-100 hover:bg-cyan-700/70 hover:shadow-lg border transition hover:-translate-y-0.5 duration-150"><span>Next</span></button>
+            </div>
+            
+            <!-- border -->
+            
+            <div class="mt-12 border-b border-b-gray-300">
+                
+            </div>
+
+            <!-- bottom content -->
+            <p class="py-6 text-sm font-thin text-center text-gray-400">
+              or log in with
+            </p>
+
+            <!-- bottom buttons container -->
+
+            <div class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+              <button class="flex items-center justify-center p-2 space-x-3 border border-gray-300 rounded shadow-sm hover:-translate-y-0.5 transition-all duration-150 md:w-1/2">
+                <img src="5_images/facebook.png" alt="" class="w-9">
+                <span>Facebook</span>
+              </button>
+
+
+              <button class="flex items-center justify-center p-2 space-x-3 border border-gray-300 rounded shadow-sm hover:-translate-y-0.5 transition-all duration-150 md:w-1/2">
+                <img src="5_images/google.png" alt="" class="w-9">
+                <span>Google</span>
+              </button>
+
+            </div>
+
+          </div>
+          
+          
+          <!-- right-->
+          <img src="5_images/image.jpg" alt="" class="w-[430px] hidden md:block">
+
+          <!-- close button -->
+          <div class="absolute top-3 right-3 cursor-pointer bg-gray-200 rounded-full p-3 hover:-translate-y-0.5 transition-all duration-200">
+            <img src="https://img.icons8.com/?size=50&id=8112&format=png" alt="" class="w-6 h-6">
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
